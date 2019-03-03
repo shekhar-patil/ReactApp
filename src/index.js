@@ -7,5 +7,5 @@ import Counters from './components/counters'
 import "bootstrap/dist/css/bootstrap.css";
 
 
-ReactDOM.render(<Counters />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 serviceWorker.unregister();
