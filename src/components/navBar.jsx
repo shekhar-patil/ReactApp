@@ -3,7 +3,7 @@ class NavBar extends Component {
   state = {  }
   render() { 
     return ( 
-      <nav class="navbar navbar-light bg-light">
+      <nav className="navbar navbar-light bg-light">
         <div>NavBar <span className="badge m-2 badge-primary">{this.props.totalCount}</span ></div>
       </nav> 
     );

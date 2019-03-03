@@ -28,7 +28,7 @@ class App extends Component {
     counters[index].value++;
     this.setState({counters});
   }
-  handleReset= () =>{
+  handleReset = () =>{
     const counters = this.state.counters.map(counter => 
       {
         counter.value = 0;
@@ -36,12 +36,16 @@ class App extends Component {
       });
     this.setState({counters});
   }
-
+  totalCount = (count , counter) =>{
+    
+  }
+   
   render() {
     return (
       <div>
         <NavBar
-        totalCount = { this.state.counters.filter(c => c.value > 0).length }/>
+          totalCount = { this.state.counters.filter(c => c.value > 0).length }
+        />
         <Counters
           counters = {this.state.counters}
           handleDelete = {this.handleDelete}
